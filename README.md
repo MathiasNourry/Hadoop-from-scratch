@@ -4,12 +4,21 @@ DAGandCo is a pseudo DAG (Directed Acyclic Graph) builder application to visuali
 
 ## Quick introduction to MapReduce system 
 
+Because a diagram is sometimes worth more than a thousand words, here is the functioning of a MapReduce system applied to the counting of words in the following text:
 
+<h6 align="center">Welcome to Hadoop Class</h6>
+<h6 align="center">Hadoop is good</h6>
+<h6 align="center">Hadoop is bad</h6>
+
+
+<p align="center">
+  <img src="https://github.com/MathiasNourry/INF727-Systemes_repartis/blob/main/Explain_1.png" width="1000" />
+</p>
 
 ## Environment
 
 First of all, it is important to know that the MapReduce system uses the ***split*** unix command here. It is therefore necessary to have a unix system (Linux or Mac).   
-What's more, DAGandCo requires the installation of ***dash*** and ***dash_cytoscape*** packages from [PyPI](https://pypi.org/project/shap)
+What's more, DAGandCo requires the installation of ***dash*** and ***dash_cytoscape*** packages from [PyPI](https://pypi.org)
 
 <pre>
 pip install dash
@@ -33,7 +42,7 @@ DAGandCo needs 3 inputs to launch a wordcount MapReduce process:
 3. the path of the file on which to apply the wordcount.
 
 <p align="center">
-  <img src="https://github.com/MathiasNourry/INF727-Systemes_repartis/blob/main/Explanation_1.png" width="1000" />
+  <img src="https://github.com/MathiasNourry/INF727-Systemes_repartis/blob/main/Explain_2.png" width="1000" />
 </p>
 
 
