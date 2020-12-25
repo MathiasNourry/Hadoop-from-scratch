@@ -12,7 +12,7 @@ Because a diagram is sometimes worth more than a thousand words, here is the fun
 
 
 <p align="center">
-  <img src="https://github.com/MathiasNourry/INF727-Systemes_repartis/blob/main/Explain_1.png" width="1000" />
+  <img src="https://github.com/MathiasNourry/Hadoop-from-scratch/blob/main/Explain_1.png" width="1000" />
 </p>
 
 ## Environment
@@ -42,7 +42,7 @@ DAGandCo needs 3 inputs to launch a wordcount MapReduce process:
 3. the path of the file on which to apply the wordcount.
 
 <p align="center">
-  <img src="https://github.com/MathiasNourry/INF727-Systemes_repartis/blob/main/Explain_2.png" width="1000" />
+  <img src="https://github.com/MathiasNourry/Hadoop-from-scratch/blob/main/Explain_2.png" width="1000" />
 </p>
 
 
