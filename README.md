@@ -49,7 +49,7 @@ DAGandCo needs 3 inputs to launch a wordcount MapReduce process:
 Once the entries have been filled in from the DAGandCo interface, you can launch the job.   
 You should see the DAG being built in real time as the MapReduce process is running.   
 
-![](https://github.com/MathiasNourry/INF727-Systemes_repartis/blob/main/Explanation_2.gif)
+![](https://github.com/MathiasNourry/MapReduce-from-scratch/blob/main/Explain_3.gif)
 
 ## Notation 
 A colour code is used in DAGandCo:
