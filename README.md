@@ -34,6 +34,12 @@ dash_cytoscape.__version__ == 0.2.0
 pandas.__version__ == 1.1.4
 </pre>
 
+At first operation it is necessary to make some python scripts executable. To do this, go to the directory where the scripts "MASTER_v3_1.py" and "SLAVE_v3_1.py" are located and execute the following unix command in your terminal : 
+
+<pre>
+chmod +x MASTER_v3_1.py SLAVE_v3_1.py
+</pre>
+
 ## Getting started
 
 DAGandCo needs 3 inputs to launch a wordcount MapReduce process:
