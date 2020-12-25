@@ -52,7 +52,7 @@ You should see the DAG being built in real time as the MapReduce process is runn
 ![](https://github.com/MathiasNourry/MapReduce-from-scratch/blob/main/Explain_3.gif)
 
 ## Notation 
-A colour code is used in DAGandCo:
+The developed system does not allow to manage cluster computer failures. A colour code is therefore used in the DAGandCo interface to inform the user of the various cluster events:
 - Green node = the computer has performed its task correctly;
 - Blue node = occurs during a SHUFFLE if a computer didn't receive files to REDUCE;
 - Orange node = this colour may appear if, during SHUFFLE, at least one SSH command to transfer a file between two computers in the cluster has failed. It thus reflects a loss of information;
