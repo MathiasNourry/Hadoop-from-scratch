@@ -1,0 +1,137 @@
+body {
+	margin: 0;
+}
+
+#Left_panel.Left_panel_format {
+	width: 15vw;
+	height: 100vh;
+	position: fixed;
+	background-color: #d4d4d4;
+	text-align: center;
+}
+
+#Left_panel_title.Left_panel_title_format {
+	margin-top: 10%;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+#Left_panel_subtitle.Left_panel_subtitle_format {
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+#Signature.Signature_format {
+	margin-top: 0;
+	margin-bottom: 5vh;
+	text-align: center;
+}
+
+#Remote_Computers_Instruction.Remote_Computers_Instruction_format {
+	margin-bottom: 0;
+	font: caption;
+}
+
+#Remote_Computers_Input.Remote_Computers_Input_format {
+	width: 90%;
+	margin-bottom: 1vh
+}
+
+#Username_Instruction.Username_Instruction_format {
+	margin-bottom: 0;
+	font: caption;
+}
+
+#Username_Input.Username_Input_format {
+	width: 90%;
+	margin-bottom: 1vh
+}
+
+#Inputfilename_Instruction.Inputfilename_Instruction_format {
+	margin-bottom: 0;
+	font: caption;
+}
+
+#Inputfilename_Input.Inputfilename_Input_format {
+	width: 90%;
+	margin-bottom: 5vh;
+}
+
+#Run_Button.Run_Button_format {
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 1vh;
+	text-align: center;
+}
+
+#Purge_Button.Purge_Button_format {
+	text-align: center;
+	margin-bottom: 1vh;
+}
+
+#Inputfilename_Info.Inputfilename_Info_default_format {
+	text-align: center;
+}
+
+#Inputfilename_Info.Inputfilename_Info_OK_format {
+	text-align: center;
+	color: #008000;
+}
+
+#Inputfilename_Info.Inputfilename_Info_Error_format {
+	text-align: center;
+	color: #ff0000;
+}
+
+#LogoTelecom_Img.LogoTelecom_Img_format {
+	top: 80vh;
+	left: 2vw;
+	position: fixed;
+}
+
+#Main_panel.Main_panel_format {
+	left: 15vw;
+	width: 85vw;
+	height: 100vh;
+	position: fixed;
+}
+
+#Introduction_Div.Introduction_Div_format {
+	top: 34vh;
+	left: 42vw;
+	height: 22vh;
+	width: 32vw;
+	padding: 0 10px;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	background-color: #d4d4d4;
+	text-align: center;
+	position: fixed
+}
+
+#DAG_Div.DAG_Div_format {
+	width: 98%;
+	height: 58%;
+	margin: 1%;
+
+}
+
+#DAG_figure_Div.DAG_figure_Div_format {
+	width: 100%;
+	height: 100%;
+}
+
+#Terminal_Text.Terminal_Text_format {
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-color: black;
+}
+
+#LOG_Div.LOG_Div_format {
+	width: 98%;
+	height: 38%;
+	margin: 1%;
+}
+
