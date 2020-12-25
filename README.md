@@ -1,9 +1,10 @@
-# INF727-Systemes_repartis
+# Hadoop from scratch !
 
-DAGandCo is a pseudo DAG (Directed Acyclic Graph) builder application to visualize in real time the execution of a MapReduce system. Its development is part of the INF 727 course given at Télecom Paris dealing with distributed systems.
-This application, developped in Python, is available with two versions of MapReduce system used to make a wordcount job:
-- the version v3.0 is the non-optimized version 
-- the version v3.1 is the optimized one
+DAGandCo is a pseudo DAG (Directed Acyclic Graph) builder application to visualize in real time the execution of a MapReduce system for distributed calculations. Its development is part of the INF 727 course given at Télecom Paris dealing with distributed systems.
+
+## Quick introduction to MapReduce system 
+
+
 
 ## Environment
 
@@ -41,11 +42,9 @@ You should see the DAG being built in real time as the MapReduce process is runn
 
 ![](https://github.com/MathiasNourry/INF727-Systemes_repartis/blob/main/Explanation_2.gif)
 
-
 ## Notation 
 A colour code is used in DAGandCo:
 - Green node = the computer has performed its task correctly;
 - Blue node = occurs during a SHUFFLE if a computer didn't receive files to REDUCE;
 - Orange node = this colour may appear if, during SHUFFLE, at least one SSH command to transfer a file between two computers in the cluster has failed. It thus reflects a loss of information;
 - Red node = reports a fatal error on the computer, the task could not be performed.
-
