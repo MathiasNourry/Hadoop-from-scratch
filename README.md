@@ -12,7 +12,7 @@ Because a diagram is sometimes worth more than a thousand words, here is the fun
 
 
 <p align="center">
-  <img src="https://github.com/MathiasNourry/MapReduce-from-scratch/blob/main/Explain_1.png" width="1000" />
+  <img src="Explain_1.png" width="1000" />
 </p>
 
 ## Environment
@@ -48,14 +48,16 @@ DAGandCo needs 3 inputs to launch a wordcount MapReduce process:
 3. the path of the file on which to apply the wordcount.
 
 <p align="center">
-  <img src="https://github.com/MathiasNourry/MapReduce-from-scratch/blob/main/Explain_2.png" width="1000" />
+  <img src="Explain_2.png" width="1000" />
 </p>
 
 
 Once the entries have been filled in from the DAGandCo interface, you can launch the job.   
 You should see the DAG being built in real time as the MapReduce process is running.   
 
-![](https://github.com/MathiasNourry/MapReduce-from-scratch/blob/main/Explain_3.gif)
+<p align="center">
+  <img src="Explain_3.gif" width="1000" />
+</p>
 
 ## Notation 
 The developed system does not allow to manage cluster computer failures. A colour code is therefore used in the DAGandCo interface to inform the user of the various cluster events:
