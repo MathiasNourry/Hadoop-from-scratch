@@ -40,7 +40,7 @@ At first operation it is necessary to make some python scripts executable. To do
 $ chmod +x MASTER_v3_1.py SLAVE_v3_1.py
 </pre>
 
-To ensure the proper functioning of the application it is also necessary to have established RSA key authentication with the different machines of the selected cluster in order to bypass the need for passwords.   
+To ensure the proper functioning of the application it is also necessary to have established RSA key authentication with the different machines of the selected cluster in order to bypass the need of passwords.   
 To do this you need to execute the following unix command in your terminal :
 
 <pre>
@@ -69,8 +69,16 @@ You should see the DAG being built in real time as the MapReduce process is runn
 </p>
 
 ## Notation 
+
 The developed system does not allow to manage cluster computer failures. A colour code is therefore used in the DAGandCo interface to inform the user of the various cluster events:
 - Green node = the computer has performed its task correctly
 - Blue node = occurs during a SHUFFLE if a computer didn't receive files to REDUCE
 - Orange node = this colour may appear if, during SHUFFLE, at least one SSH command to transfer a file between two computers in the cluster has failed. It thus reflects a loss of information
 - Red node = reports a fatal error on the computer, the task could not be performed
+
+
+## Limitation and areas for improvment
+
+- A 10-seconds timeout is considered during the first ssh connection with each computer of the cluster. Actually, if this time is passed for at least one computer of the cluster, the entire process is stopped : this exception is considered as a fatal error. Looking ahead, after detecting this exception, it would be better to only ignore the computer concerned by the exception for the rest of the process.
+
+- According to the colour code used throught the DAGandCo UI, we can see the data resilience is not assumed by the process. Indeed actually if a computer collapsed during the process, the final result's merit. Looking ahead, it would be better to consider a replication factor.
