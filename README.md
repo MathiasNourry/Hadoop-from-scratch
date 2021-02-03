@@ -15,14 +15,14 @@ Because a diagram is sometimes worth more than a thousand words, here is the fun
   <img src="Appendix/Explain_1.png" width="1000" />
 </p>
 
-## Environment
+## Environment and operation
 
 First of all, it is important to know that the MapReduce system uses the ***split*** unix command here. It is therefore necessary to have a unix system (Linux or Mac).   
 What's more, DAGandCo requires the installation of ***dash*** and ***dash_cytoscape*** packages from [PyPI](https://pypi.org)
 
 <pre>
-pip install dash
-pip install dash_cytoscape
+$ pip install dash
+$ pip install dash_cytoscape
 </pre>
 
 Other packages are used but are directly empacked if you have downloaded Python via Anaconda.   
@@ -37,8 +37,17 @@ pandas.__version__ == 1.1.4
 At first operation it is necessary to make some python scripts executable. To do this, go to the directory where the scripts ***MASTER_v3_1.py*** and ***SLAVE_v3_1.py*** are located and execute the following unix command in your terminal : 
 
 <pre>
-chmod +x MASTER_v3_1.py SLAVE_v3_1.py
+$ chmod +x MASTER_v3_1.py SLAVE_v3_1.py
 </pre>
+
+To ensure the proper functioning of the application it is also necessary to have established RSA key authentication with the different machines of the selected cluster in order to bypass the need for passwords.   
+To do this you need to execute the following unix command in your terminal :
+
+<pre>
+$ ssh-keygen -t rsa
+$ ssh-copy-id your_username@computer_name
+</pre>
+
 
 ## Getting started
 
