@@ -70,7 +70,7 @@ You should see the DAG being built in real time as the MapReduce process is runn
 
 ## Notation 
 
-The developed system does not allow to manage cluster computer failures. A colour code is therefore used in the DAGandCo interface to inform the user of the various cluster events:
+The developed system does not allow to manage cluster computer failures. A color-coding is therefore used in the DAGandCo interface to inform the user of the various cluster events:
 - Green node = the computer has performed its task correctly
 - Blue node = occurs during a SHUFFLE if a computer didn't receive files to REDUCE
 - Orange node = this colour may appear if, during SHUFFLE, at least one SSH command to transfer a file between two computers in the cluster has failed. It thus reflects a loss of information
@@ -79,6 +79,6 @@ The developed system does not allow to manage cluster computer failures. A colou
 
 ## Limitation and areas for improvment
 
-- A 10-seconds timeout is considered during the first ssh connection with each computer of the cluster. Actually, if this time is passed for at least one computer of the cluster, the entire process is stopped : this exception is considered as a fatal error. Looking ahead, after detecting this exception, it would be better to only ignore the computer concerned by the exception for the rest of the process.
+- A 10-seconds timeout is taken into account during the first ssh connection with each computer in the cluster. Actually, if this time is exceeded for at least one computer of the cluster, the whole process is stopped : this exception is considered as a fatal error. For the future, after detecting this exception, it would be better to ignore only the computer affected by the exception for the rest of the process and thus let the rest of the process run on the rest of the cluster.
 
-- According to the colour code used throught the DAGandCo UI, we can see the data resilience is not assumed by the process. Indeed actually if a computer collapsed during the process, the final result's merit. Looking ahead, it would be better to consider a replication factor.
+- From to the color-coding used by the DAGandCo UI, we can see the data resiliency is not ensured by the process. Indeed, if a computer crashes during the process, the final result is not assured. For the future, it would be preferable to consider a replication factor to ensure that the data is always available in the cluster despite a failure of part of it.
