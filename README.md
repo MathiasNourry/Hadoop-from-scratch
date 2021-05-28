@@ -1,4 +1,6 @@
-# MapReduce from scratch !
+<h1 align="center">
+  MapReduce from scratch !
+</h1>
 
 DAGandCo is a pseudo DAG (Directed Acyclic Graph) builder application to visualize in real time the execution of a MapReduce system for distributed calculations. Its development is part of the INF 727 course given at Télecom Paris dealing with distributed systems.
 
